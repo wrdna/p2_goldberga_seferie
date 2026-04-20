@@ -14,6 +14,5 @@ catkin_package()
 catkin_install_python(PROGRAMS
   script/ball_chase.py
   script/goal_sequence.py
-  script/auto_nav.py
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
