@@ -1,0 +1,6 @@
+<launch>
+  <include file="$(find turtlebot_bringup)/launch/minimal.launch"/>
+  <include file="$(find astra_launch)/launch/astra.launch"/>
+
+  <node pkg="p2_goldberga_seferie" type="ball_chase.py" name="ball_chase" output="screen"/>
+</launch>

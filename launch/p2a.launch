@@ -1,0 +1,9 @@
+<launch>
+  <include file="$(find turtlebot_bringup)/launch/minimal.launch"/>
+
+  <include file="$(find turtlebot_navigation)/launch/amcl_demo.launch">
+    <arg name="map_file" value="$(find p2_goldberga_seferie)/misc/MAP.yaml"/>
+  </include>
+
+  <node pkg="p2_goldberga_seferie" type="goal_sequence.py" name="goal_sequence" output="screen"/>
+</launch>
